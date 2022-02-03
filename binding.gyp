@@ -56,18 +56,14 @@
             ]
           }
         }],
-        ['OS="mac"', {
-          'cflags':[
-            "-stdlib=libc++"
-          ]
-        }],
-        [ 'OS=="mac"', {
+        ['OS=="mac"', {
           'cflags':[
             "-stdlib=libc++"
           ],
           'xcode_settings': {
-            "OTHER_CPLUSPLUSFLAGS":["-std=c++11", "-stdlib=libc++"],
+            "OTHER_CPLUSPLUSFLAGS":["-std=c++14", "-stdlib=libc++"],
             "OTHER_LDFLAGS": ["-stdlib=libc++"],
+            "MACOSX_DEPLOYMENT_TARGET": "10.7",
           },
         }],
       ]
