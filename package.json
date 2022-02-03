@@ -1,7 +1,7 @@
 {
   "name": "@thiagoelg/node-printer",
   "description": "Node.js printer bindings",
-  "version": "0.5.6",
+  "version": "0.5.7-rc1",
   "homepage": "https://github.com/thiagoelg/node-printer",
   "author": {
     "name": "Ion Lupascu",
@@ -10,25 +10,27 @@
   },
   "contributors": [
     "Thiago Lugli <thiagoelg@gmail.com>",
-    "Eko Eryanto <ekoeryanto@gmail.com>",
-    "Name Lastname <email@server.com>"
+    "Eko Eryanto <ekoeryanto@gmail.com>"
   ],
   "repository": {
     "type": "git",
     "url": "git://github.com/thiagoelg/node-printer.git"
   },
   "devDependencies": {
-    "node-abi": "^2.30.0",
+    "node-abi": "^3.8.0",
     "nodeunit": "*",
-    "prebuild": "^10.0.1",
-    "prebuild-ci": "^3.1.0"
+    "patch-package": "^6.4.7",
+    "prebuild": "^11.0.3",
+    "prebuild-ci": "^4.0.0"
   },
   "engines": {
     "node": ">= 4.0.0"
   },
   "scripts": {
     "install": "prebuild-install || node-gyp rebuild",
-    "prebuild": "prebuild --all --force --strip --verbose",
+    "postinstall": "patch-package",
+    "prebuild-all": "prebuild --all --force --strip --verbose --openssl_fips=X",
+    "prebuild": "prebuild",
     "rebuild": "node-gyp rebuild",
     "test": "nodeunit test"
   },
@@ -45,7 +47,7 @@
   ],
   "main": "./lib/printer",
   "dependencies": {
-    "nan": "^2.14.1",
-    "prebuild-install": "^6.1.3"
+    "nan": "^2.15.0",
+    "prebuild-install": "^7.0.1"
   }
 }
