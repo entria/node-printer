@@ -3,7 +3,7 @@ name: Prebuild Binaries
 on:
   push:
     branches:
-      - prebuild
+      - master
 
 jobs:
   prebuild-linux:
