@@ -53,6 +53,6 @@
     "prebuild-install": "^7.0.1"
   },
   "resolutions": {
-    "node-gyp": "8.4.1"
+    "node-gyp": "7.1.2"
   }
 }
