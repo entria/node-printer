@@ -1,11 +1,11 @@
-build/*
-releases/*
+build
+releases
 *~
 .settings
 .c9*
-node_modules/*
+node_modules
 *.node
 *.swp
 *.log
-prebuilds/
+prebuilds
 .prebuildrc

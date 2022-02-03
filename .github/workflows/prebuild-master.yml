@@ -1,4 +1,4 @@
-name: Prebuild Binaries
+name: Prebuild Binaries and Publish
 
 on:
   push:
