@@ -16,7 +16,7 @@
       ]
     },
     {
-      'target_name': 'node_printer',
+      'target_name': '<(module_name)',
       'sources': [
         'src/node_printer.cc',
         'src/node_printer_win.cc',
