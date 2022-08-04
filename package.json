@@ -1,7 +1,7 @@
 {
   "name": "@grandchef/node-printer",
   "description": "Node.js printer bindings",
-  "version": "1.0.0",
+  "version": "0.7.0",
   "main": "./lib/printer",
   "exports": {
     ".": "./lib/printer.js",
