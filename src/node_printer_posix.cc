@@ -310,14 +310,13 @@ MY_NODE_MODULE_CALLBACK(getDefaultPrinterName)
     MY_NODE_MODULE_HANDLESCOPE;
     //This does not return default user printer name according to https://www.cups.org/documentation.php/doc-2.0/api-cups.html#cupsGetDefault2
     //so leave as undefined and JS implementation will loop in all printers
-    /*
-    const char * printerName = cupsGetDefault();
+
+    const char * printerName = NULL ; // cupsGetDefault();
 
     // return default printer name only if defined
     if(printerName != NULL) {
         MY_NODE_MODULE_RETURN_VALUE(V8_STRING_NEW_UTF8(printerName));
     }
-    */
     MY_NODE_MODULE_RETURN_UNDEFINED();
 }
 
