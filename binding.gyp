@@ -16,11 +16,11 @@
       ]
     },
     {
-      'target_name': 'node_printer',
+      'target_name': '<(module_name)',
       'sources': [
-        # is like "ls -1 src/*.cc", but gyp does not support direct patterns on
-        # sources
-        '<!@(["python", "tools/getSourceFiles.py", "src", "cc"])'
+        'src/node_printer.cc',
+        'src/node_printer_win.cc',
+        'src/node_printer_posix.cc'
       ],
       'include_dirs' : [
         "<!(node -e \"require('nan')\")"
