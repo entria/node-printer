@@ -40,7 +40,7 @@ jobs:
           npm run prebuild -- --strip --all --arch x64
   prebuild-windows:
     name: Prebuild Binaries for Windows
-    runs-on: windows-latest
+    runs-on: windows-2016
     timeout-minutes: 30
     steps:
       - uses: actions/setup-node@v1
