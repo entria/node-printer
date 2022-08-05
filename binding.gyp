@@ -3,9 +3,6 @@
     "module_name%": "node_printer",
     "module_path%": "lib"
   },
-  'defines': [
-    "NAPI_VERSION=<(napi_build_version)",
-  ],
   'targets': [
     {
       "target_name": "action_after_build",
