@@ -83,12 +83,9 @@ node-pre-gyp build package --runtime=electron --target=`${electron_version}` --t
 ## Refer
 
 - [examples](https://github.com/grandchef/node-printer/tree/main/examples)
-- [grandchef/node-printer](https://github.com/grandchef/node-printer)
+- [thiagoelg/node-printer](https://github.com/thiagoelg/node-printer)
+- [thiagoelg/node-printer](https://github.com/thiagoelg/node-printer)
 - [mapbox/node-sqlite3](https://github.com/mapbox/node-sqlite3)
-
-## Author(s)
-
-- Artoriasless, tangjianyi1993@live.com
 
 ## License
 
