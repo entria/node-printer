@@ -8,8 +8,10 @@
     "./build": "./build.js"
   },
   "scripts": {
+    "apply-patches": "patch-package",
     "install": "prebuild-install || node-gyp rebuild",
-    "prebuild": "prebuild --all --force --strip --verbose",
+    "prebuild-all": "prebuild --all --force --strip --verbose --openssl_fips=X",
+    "prebuild": "prebuild",
     "rebuild": "node-gyp rebuild",
     "test": "nodeunit test"
   },
