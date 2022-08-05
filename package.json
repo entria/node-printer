@@ -1,7 +1,7 @@
 {
   "name": "@grandchef/node-printer",
   "description": "Node.js printer bindings",
-  "version": "0.7.0",
+  "version": "0.7.1",
   "main": "./lib/printer",
   "exports": {
     ".": "./lib/printer.js",
@@ -15,6 +15,7 @@
     "test": "nodeunit test"
   },
   "dependencies": {
+    "@mapbox/node-pre-gyp": "^1.0.9",
     "nan": "^2.15.0",
     "prebuild-install": "^7.0.1"
   },
@@ -25,21 +26,20 @@
     "eslint-config-egg": "^8.1.2",
     "husky": "^4.3.0",
     "lint-staged": "^10.4.2",
-    "nodeunit": "*",
-    "prebuild": "^11.0.4",
-    "prebuild-ci": "^4.0.0",
     "node-abi": "^3.8.0",
-    "patch-package": "^6.4.7"
+    "nodeunit": "*",
+    "patch-package": "^6.4.7",
+    "prebuild": "^11.0.4",
+    "prebuild-ci": "^4.0.0"
   },
   "engines": {
     "node": ">= 4.0.0"
   },
   "binary": {
     "module_name": "node_printer",
-    "module_path": "./lib/binding/napi-{platform}-{arch}",
+    "module_path": "./lib/binding",
     "host": "https://github.com/grandchef/node-printer/releases/download/",
-    "remote_path": "v{version}",
-    "package_name": "napi-{platform}-{arch}.tar.gz"
+    "remote_path": "v{version}"
   },
   "directories": {
     "example": "examples",
