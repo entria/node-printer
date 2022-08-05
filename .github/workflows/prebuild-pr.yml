@@ -21,7 +21,6 @@ jobs:
       - run: npm i
       - name: Prebuild
         run: |
-          npm run apply-patches
           npm run prebuild -- --strip --all --arch ia32
           npm run prebuild -- --strip --all --arch x64
   prebuild-macos:
@@ -36,7 +35,6 @@ jobs:
       - run: npm i
       - name: Prebuild
         run: |
-          npm run apply-patches
           npm run prebuild -- --strip --all --arch x64
   prebuild-windows:
     name: Prebuild Binaries for Windows
@@ -50,6 +48,5 @@ jobs:
       - run: npm i
       - name: Prebuild
         run: |
-          npm run apply-patches
           npm run prebuild -- --strip --all --arch ia32
           npm run prebuild -- --strip --all --arch x64
