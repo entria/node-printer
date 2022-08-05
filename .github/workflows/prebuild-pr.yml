@@ -22,8 +22,8 @@ jobs:
       - name: Prebuild
         run: |
           npm run apply-patches
-          npm run prebuild -- --strip --all --arch ia32
-          npm run prebuild -- --strip --all --arch x64
+          npm run prebuild -- --strip -t 47 -t 48 -t 49 -t 50 -t 51 -t 53 -t 54 -t 57 -t 59 -t 64 -t 67 -t 69 -t 70 -t 72 -t 73 -t 75 -t 76 -t 79 -t 80 -t 82 -t 83 -t 85 -t 87 -t 88 -t 89 -t 93 -t 97 -t 98 -t 99 -t 101 -t 102 -t 103 --arch ia32
+          npm run prebuild -- --strip -t 47 -t 48 -t 49 -t 50 -t 51 -t 53 -t 54 -t 57 -t 59 -t 64 -t 67 -t 69 -t 70 -t 72 -t 73 -t 75 -t 76 -t 79 -t 80 -t 82 -t 83 -t 85 -t 87 -t 88 -t 89 -t 93 -t 97 -t 98 -t 99 -t 101 -t 102 -t 103 --arch x64
   prebuild-macos:
     name: Prebuild Binaries for macOS
     runs-on: macos-latest
@@ -37,10 +37,10 @@ jobs:
       - name: Prebuild
         run: |
           npm run apply-patches
-          npm run prebuild -- --strip --all --arch x64
+          npm run prebuild -- --strip -t 47 -t 48 -t 49 -t 50 -t 51 -t 53 -t 54 -t 57 -t 59 -t 64 -t 67 -t 69 -t 70 -t 72 -t 73 -t 75 -t 76 -t 79 -t 80 -t 82 -t 83 -t 85 -t 87 -t 88 -t 89 -t 93 -t 97 -t 98 -t 99 -t 101 -t 102 -t 103 --arch x64
   prebuild-windows:
     name: Prebuild Binaries for Windows
-    runs-on: windows-2016
+    runs-on: windows-2019
     timeout-minutes: 30
     steps:
       - uses: actions/setup-node@v1
@@ -51,5 +51,5 @@ jobs:
       - name: Prebuild
         run: |
           npm run apply-patches
-          npm run prebuild -- --strip --all --arch ia32
-          npm run prebuild -- --strip --all --arch x64
+          npm run prebuild -- --strip -t 47 -t 48 -t 49 -t 50 -t 51 -t 53 -t 54 -t 57 -t 59 -t 64 -t 67 -t 69 -t 70 -t 72 -t 73 -t 75 -t 76 -t 79 -t 80 -t 82 -t 83 -t 85 -t 87 -t 88 -t 89 -t 93 -t 97 -t 98 -t 99 -t 101 -t 102 -t 103 --arch ia32
+          npm run prebuild -- --strip -t 47 -t 48 -t 49 -t 50 -t 51 -t 53 -t 54 -t 57 -t 59 -t 64 -t 67 -t 69 -t 70 -t 72 -t 73 -t 75 -t 76 -t 79 -t 80 -t 82 -t 83 -t 85 -t 87 -t 88 -t 89 -t 93 -t 97 -t 98 -t 99 -t 101 -t 102 -t 103 --arch x64

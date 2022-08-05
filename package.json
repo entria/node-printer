@@ -39,8 +39,7 @@
     "module_path": "./lib/binding/napi-{platform}-{arch}",
     "host": "https://github.com/grandchef/node-printer/releases/download/",
     "remote_path": "v{version}",
-    "package_name": "napi-{platform}-{arch}.tar.gz",
-    "napi_versions": [ 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16 ]
+    "package_name": "napi-{platform}-{arch}.tar.gz"
   },
   "directories": {
     "example": "examples",
