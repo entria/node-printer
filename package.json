@@ -10,7 +10,6 @@
   "scripts": {
     "apply-patches": "patch-package",
     "install": "prebuild-install || node-gyp rebuild",
-    "prebuild-all": "prebuild --all --force --strip --verbose --openssl_fips=X",
     "prebuild": "prebuild",
     "rebuild": "node-gyp rebuild",
     "test": "nodeunit test"
@@ -27,7 +26,7 @@
     "husky": "^4.3.0",
     "lint-staged": "^10.4.2",
     "nodeunit": "*",
-    "prebuild": "^11.0.3",
+    "prebuild": "^11.0.4",
     "prebuild-ci": "^4.0.0",
     "node-abi": "^3.8.0",
     "patch-package": "^6.4.7"
@@ -40,7 +39,8 @@
     "module_path": "./lib/binding/napi-{platform}-{arch}",
     "host": "https://github.com/grandchef/node-printer/releases/download/",
     "remote_path": "v{version}",
-    "package_name": "napi-{platform}-{arch}.tar.gz"
+    "package_name": "napi-{platform}-{arch}.tar.gz",
+    "napi_versions": [ 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16 ]
   },
   "directories": {
     "example": "examples",
@@ -57,6 +57,15 @@
     "printer"
   ],
   "types": "types/index.d.ts",
-  "author": "",
+  "author": {
+    "name": "Ion Lupascu",
+    "url": "http://program-support.co.uk/",
+    "email": "ionlupascu@gmail.com"
+  },
+  "contributors": [
+    "Thiago Lugli <thiagoelg@gmail.com>",
+    "Eko Eryanto <ekoeryanto@gmail.com>",
+    "Francimar Alves <mazinsw@gmail.com>"
+  ],
   "license": "MIT"
 }
