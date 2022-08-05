@@ -1,0 +1,33 @@
+diff --git a/node_modules/node-abi/abi_registry.json b/node_modules/node-abi/abi_registry.json
+index f4f1bf7..41bd3d0 100644
+--- a/node_modules/node-abi/abi_registry.json
++++ b/node_modules/node-abi/abi_registry.json
+@@ -52,7 +52,7 @@
+   },
+   {
+     "runtime": "node",
+-    "target": "17.0.0",
++    "target": "17.0.1",
+     "lts": false,
+     "future": false,
+     "abi": "102"
+@@ -199,19 +199,5 @@
+     "lts": false,
+     "runtime": "electron",
+     "target": "19.0.0-alpha.1"
+-  },
+-  {
+-    "abi": "107",
+-    "future": false,
+-    "lts": false,
+-    "runtime": "electron",
+-    "target": "20.0.0-alpha.1"
+-  },
+-  {
+-    "abi": "109",
+-    "future": true,
+-    "lts": false,
+-    "runtime": "electron",
+-    "target": "21.0.0-alpha.1"
+   }
+ ]
