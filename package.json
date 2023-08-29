@@ -1,5 +1,5 @@
 {
-  "name": "@grandchef/node-printer",
+  "name": "@woovi/node-printer",
   "description": "Node.js printer bindings",
   "version": "0.7.1",
   "main": "./lib/printer",
@@ -20,15 +20,16 @@
     "prebuild-install": "^7.0.1"
   },
   "devDependencies": {
-    "@commitlint/cli": "^11.0.0",
-    "@commitlint/config-conventional": "^11.0.0",
-    "eslint": "^7.11.0",
-    "eslint-config-egg": "^8.1.2",
-    "husky": "^4.3.0",
-    "lint-staged": "^10.4.2",
+    "@commitlint/cli": "^17.7.1",
+    "@commitlint/config-conventional": "^17.7.0",
+    "eslint": "^8.48.0",
+    "eslint-config-egg": "^12.2.1",
+    "husky": "^8.0.3",
+    "lint-staged": "^14.0.1",
     "node-abi": "^3.8.0",
+    "node-gyp": "^9.4.0",
     "nodeunit": "*",
-    "patch-package": "^6.4.7",
+    "patch-package": "^8.0.0",
     "prebuild": "^11.0.4",
     "prebuild-ci": "^4.0.0"
   },
