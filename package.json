@@ -2,18 +2,22 @@
   "name": "@woovi/node-printer",
   "description": "Node.js printer bindings",
   "version": "0.7.1",
-  "main": "./lib/printer",
-  "exports": {
-    ".": "./lib/printer.js",
-    "./build": "./build.js"
+  "author": {
+    "name": "Ion Lupascu",
+    "url": "http://program-support.co.uk/",
+    "email": "ionlupascu@gmail.com"
   },
-  "scripts": {
-    "apply-patches": "patch-package",
-    "install": "prebuild-install || node-gyp rebuild",
-    "prebuild": "prebuild",
-    "rebuild": "node-gyp rebuild",
-    "test": "nodeunit test"
+  "binary": {
+    "module_name": "node_printer",
+    "module_path": "./lib/binding",
+    "host": "https://github.com/grandchef/node-printer/releases/download/",
+    "remote_path": "v{version}"
   },
+  "contributors": [
+    "Thiago Lugli <thiagoelg@gmail.com>",
+    "Eko Eryanto <ekoeryanto@gmail.com>",
+    "Francimar Alves <mazinsw@gmail.com>"
+  ],
   "dependencies": {
     "@mapbox/node-pre-gyp": "^1.0.9",
     "nan": "^2.15.0",
@@ -33,39 +37,38 @@
     "prebuild": "^11.0.4",
     "prebuild-ci": "^4.0.0"
   },
-  "engines": {
-    "node": ">= 4.0.0"
-  },
-  "binary": {
-    "module_name": "node_printer",
-    "module_path": "./lib/binding",
-    "host": "https://github.com/grandchef/node-printer/releases/download/",
-    "remote_path": "v{version}"
-  },
   "directories": {
     "example": "examples",
     "lib": "lib",
     "test": "test"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/grandchef/node-printer.git"
+  "engines": {
+    "node": ">= 4.0.0"
+  },
+  "exports": {
+    ".": "./lib/printer.js",
+    "./build": "./build.js"
   },
   "keywords": [
     "native",
     "node",
     "printer"
   ],
-  "types": "types/index.d.ts",
-  "author": {
-    "name": "Ion Lupascu",
-    "url": "http://program-support.co.uk/",
-    "email": "ionlupascu@gmail.com"
+  "license": "MIT",
+  "main": "./lib/printer",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/grandchef/node-printer.git"
   },
-  "contributors": [
-    "Thiago Lugli <thiagoelg@gmail.com>",
-    "Eko Eryanto <ekoeryanto@gmail.com>",
-    "Francimar Alves <mazinsw@gmail.com>"
-  ],
-  "license": "MIT"
+  "scripts": {
+    "apply-patches": "patch-package",
+    "install": "prebuild-install || node-gyp rebuild",
+    "prebuild": "prebuild",
+    "rebuild": "node-gyp rebuild",
+    "test": "nodeunit test",
+    "release:major": "npm version major && git push --follow-tags",
+    "release:minor": "npm version minor && git push --follow-tags",
+    "release:patch": "npm version patch && git push --follow-tags"
+  },
+  "types": "types/index.d.ts"
 }
