@@ -60,6 +60,9 @@
     "type": "git",
     "url": "https://github.com/woovi/node-printer.git"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "apply-patches": "patch-package",
     "install": "prebuild-install || node-gyp rebuild",
