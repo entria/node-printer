@@ -10,7 +10,7 @@
   "binary": {
     "module_name": "node_printer",
     "module_path": "./lib/binding",
-    "host": "https://github.com/grandchef/node-printer/releases/download/",
+    "host": "https://github.com/woovi/node-printer/releases/download/",
     "remote_path": "v{version}"
   },
   "contributors": [
@@ -58,7 +58,7 @@
   "main": "./lib/printer",
   "repository": {
     "type": "git",
-    "url": "https://github.com/grandchef/node-printer.git"
+    "url": "https://github.com/woovi/node-printer.git"
   },
   "scripts": {
     "apply-patches": "patch-package",
