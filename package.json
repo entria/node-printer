@@ -35,7 +35,8 @@
     "nodeunit": "*",
     "patch-package": "^8.0.0",
     "prebuild": "^11.0.4",
-    "prebuild-ci": "^4.0.0"
+    "prebuild-ci": "^4.0.0",
+    "prebuildify": "^5.0.1"
   },
   "directories": {
     "example": "examples",

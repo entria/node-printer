@@ -1,7 +1,8 @@
 {
   "variables": {
     "module_name%": "node_printer",
-    "module_path%": "lib/binding"
+    "module_path%": "lib/binding",
+    "openssl_fips": ""
   },
   'targets': [
     {
