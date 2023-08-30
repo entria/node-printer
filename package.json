@@ -57,22 +57,28 @@
   ],
   "license": "MIT",
   "main": "./lib/printer",
+  "overrides": {
+    "node-gyp": "^9.4.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/woovi/node-printer.git"
   },
-  "publishConfig": {
-    "access": "public"
+  "resolutions": {
+    "node-gyp": "^9.4.0"
   },
   "scripts": {
     "apply-patches": "patch-package",
     "install": "prebuild-install || node-gyp rebuild",
     "prebuild": "prebuild",
     "rebuild": "node-gyp rebuild",
-    "test": "nodeunit test",
     "release:major": "npm version major && git push --follow-tags",
     "release:minor": "npm version minor && git push --follow-tags",
-    "release:patch": "npm version patch && git push --follow-tags"
+    "release:patch": "npm version patch && git push --follow-tags",
+    "test": "nodeunit test"
   },
   "types": "types/index.d.ts"
 }
