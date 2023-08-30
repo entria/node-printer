@@ -1,8 +1,22 @@
 diff --git a/node_modules/node-abi/abi_registry.json b/node_modules/node-abi/abi_registry.json
-index ed55679..f2baf99 100644
+index ed55679..1b877fe 100644
 --- a/node_modules/node-abi/abi_registry.json
 +++ b/node_modules/node-abi/abi_registry.json
-@@ -217,20 +217,6 @@
+@@ -50,13 +50,6 @@
+     "future": false,
+     "abi": "93"
+   },
+-  {
+-    "runtime": "node",
+-    "target": "17.0.0",
+-    "lts": false,
+-    "future": false,
+-    "abi": "102"
+-  },
+   {
+     "runtime": "node",
+     "target": "18.0.0",
+@@ -217,20 +210,6 @@
      "runtime": "electron",
      "target": "19.0.0-alpha.1"
    },
