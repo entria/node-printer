@@ -10,7 +10,7 @@
   "binary": {
     "module_name": "node_printer",
     "module_path": "./lib/binding",
-    "host": "https://github.com/woovi/node-printer/releases/download/",
+    "host": "https://github.com/entria/node-printer/releases/download/",
     "remote_path": "v{version}"
   },
   "contributors": [
@@ -65,7 +65,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/woovi/node-printer.git"
+    "url": "https://github.com/entria/node-printer.git"
   },
   "resolutions": {
     "node-gyp": "^9.4.0"
