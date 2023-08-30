@@ -48,7 +48,7 @@ Native bind printers on POSIX and Windows OS from Node.js, electron and node-web
 ### Step 1 —— installation
 
 ```bash
-npm i @namespace/node-printer
+npm i @woovi/node-printer
 ```
 
 ### Step 2 —— rebuild by electron-builder to match node ABI
