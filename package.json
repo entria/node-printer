@@ -1,7 +1,7 @@
 {
   "name": "@woovi/node-printer",
   "description": "Node.js printer bindings",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": {
     "name": "Ion Lupascu",
     "url": "http://program-support.co.uk/",
