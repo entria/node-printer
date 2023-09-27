@@ -72,7 +72,7 @@
   },
   "scripts": {
     "apply-patches": "patch-package",
-    "install": "prebuild-install || node-gyp rebuild",
+    "install": "prebuild || node-gyp rebuild",
     "prebuild": "prebuild",
     "rebuild": "node-gyp rebuild",
     "release:major": "npm version major && git push --follow-tags",
